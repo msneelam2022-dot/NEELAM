@@ -1,316 +1,388 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEELAM | Premium Fashion Store</title>
 
-<title>NEELAM | Complete Family Wear Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="NEELAM Full Family Wear Store - Menswear, Ladieswear, Kidswear, Sarees, Lehengas, Sherwani, Coat Pant and Wedding Collection in Forbesganj, Bihar.">
+<style>
+:root{
+--gold:#D4AF37;
+--dark:#08101F;
+--black:#000;
+--white:#fff;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+body{
+background:var(--dark);
+color:#fff;
+}
 
-<link rel="stylesheet" href="style.css">
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.9);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
 
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:10px;
+}
+
+.logo h2{
+color:var(--gold);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+display:flex;
+height:100vh;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:70px;
+color:var(--gold);
+}
+
+.hero-content p{
+max-width:700px;
+margin:20px auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:8px;
+background:var(--gold);
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+color:var(--gold);
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.card h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.contact{
+background:#111827;
+text-align:center;
+}
+
+.social{
+text-align:center;
+}
+
+footer{
+background:#000;
+padding:25px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+</style>
 </head>
 
 <body>
 
-<div class="loader">
-<div class="spinner"></div>
-</div>
+<nav>
 
-<header id="home">
-
-<nav class="navbar">
-
-<div class="brand">
-
-<img src="images/logo.png" alt="NEELAM Logo">
-
+<div class="logo">
+<img src="logo.png" alt="NEELAM">
 <h2>NEELAM</h2>
-
 </div>
 
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
+<ul>
 <li><a href="#about">About</a></li>
 <li><a href="#collections">Collections</a></li>
-<li><a href="#reviews">Reviews</a></li>
+<li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
-<div class="menu-btn">
-<i class="fas fa-bars"></i>
-</div>
 
 </nav>
 
-<section class="hero">
+<header>
 
-<div class="hero-overlay"></div>
+<div class="hero">
 
 <div class="hero-content">
 
-<span class="tagline">
-Fashion For Every Generation
-</span>
-
-<h1>
-NEELAM
-</h1>
-
-<h3>
-Complete Family Wear Store
-</h3>
+<h1>NEELAM</h1>
 
 <p>
-Menswear • Ladieswear • Kidswear • Sarees • Lehengas • Coat Pant • Sherwani
+Premium Fashion Store for Men's Wear, Ladies Wear, Kids Wear,
+Shirting & Suiting in Forbesganj.
 </p>
 
-<div class="hero-buttons">
+<a href="tel:9142047599" class="btn">Call Now</a>
+
+<a href="https://wa.me/919142047599" target="_blank" class="btn">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="section-title">About NEELAM</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;line-height:2;">
+Welcome to NEELAM, your trusted destination for premium ready-made garments
+for Men, Women and Kids. We also offer premium Shirting & Suiting fabrics.
+Located at Sadar Road, Forbesganj, Bihar, we are committed to quality,
+fashion and customer satisfaction.
+</p>
+
+</section>
+
+<section id="collections">
+
+<h2 class="section-title">Our Collections</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>👔 Men's Wear</h3>
+<p>Shirts, T-Shirts, Jeans, Trousers & Ethnic Wear.</p>
+</div>
+
+<div class="card">
+<h3>👗 Ladies Wear</h3>
+<p>Sarees, Kurtis, Suits, Dresses & Fashion Collections.</p>
+</div>
+
+<div class="card">
+<h3>🧒 Kids Wear</h3>
+<p>Stylish and Comfortable Kids Fashion.</p>
+</div>
+
+<div class="card">
+<h3>✂️ Shirting & Suiting</h3>
+<p>Premium Quality Fabrics for Every Occasion.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+<img src="https://images.unsplash.com/photo-1445205170230-053b83016050">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Visit Our Store</h2>
+
+<div style="text-align:center">
+
+<a href="https://maps.app.goo.gl/BuJxUM8qvCc4nKFE7"
+target="_blank"
+class="btn">
+📍 Open Google Maps
+</a>
+
+</div>
+
+</section>
+
+<section class="social">
+
+<h2 class="section-title">Connect With Us</h2>
+
+<a href="https://www.facebook.com/profile.php?id=61573387784156"
+target="_blank"
+class="btn">
+📘 Facebook
+</a>
 
 <a href="https://wa.me/919142047599"
 target="_blank"
 class="btn">
-Order On WhatsApp </a>
+💬 WhatsApp
+</a>
 
-<a href="#collections"
-class="btn btn-outline">
-Explore Collection </a>
-
-</div>
-
-</div>
-
-</section>
-
-</header>
-
-<section class="offer-banner">
-
-<h3>
-🎉 Wedding Season Special Collection Available Now 🎉
-</h3>
-
-</section>
-
-<section id="about" class="about">
-
-<div class="container">
-
-<h2 class="section-title">
-Welcome To NEELAM
-</h2>
-
-<p>
-NEELAM is your trusted destination for complete family fashion in Forbesganj.
-From everyday clothing to wedding collections, we bring style, quality and affordability together under one roof.
-</p>
-
-<div class="stats">
-
-<div class="stat-box">
-<h3>5000+</h3>
-<p>Happy Customers</p>
-</div>
-
-<div class="stat-box">
-<h3>1000+</h3>
-<p>Fashion Products</p>
-</div>
-
-<div class="stat-box">
-<h3>100%</h3>
-<p>Customer Satisfaction</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="collections" class="collections">
-
-<div class="container">
-
-<h2 class="section-title">
-Our Premium Collections
-</h2>
-
-<div class="collection-grid">
-
-<div class="collection-card">
-<img src="images/menswear.jpg" alt="">
-<div class="card-content">
-<h3>Menswear</h3>
-<p>Formal & Casual Fashion</p>
-</div>
-</div>
-
-<div class="collection-card">
-<img src="images/ladieswear.jpg" alt="">
-<div class="card-content">
-<h3>Ladieswear</h3>
-<p>Sarees, Lehengas & Suits</p>
-</div>
-</div>
-
-<div class="collection-card">
-<img src="images/kidswear.jpg" alt="">
-<div class="card-content">
-<h3>Kidswear</h3>
-<p>Latest Fashion For Kids</p>
-</div>
-</div>
-
-<div class="collection-card">
-<img src="images/wedding.jpg" alt="">
-<div class="card-content">
-<h3>Wedding Collection</h3>
-<p>Sherwani & Coat Pant</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="gallery">
-
-<div class="container">
-
-<h2 class="section-title">
-Fashion Gallery
-</h2>
-
-<div class="gallery-grid">
-
-<img src="images/gallery1.jpg" alt="">
-<img src="images/gallery2.jpg" alt="">
-<img src="images/gallery3.jpg" alt="">
-<img src="images/gallery4.jpg" alt="">
-<img src="images/gallery5.jpg" alt="">
-<img src="images/gallery6.jpg" alt="">
-
-</div>
-
-</div>
-
-</section>
-
-<section id="reviews" class="reviews">
-
-<div class="container">
-
-<h2 class="section-title">
-Customer Reviews
-</h2>
-
-<div class="review-slider">
-
-<div class="review-card">
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p>
-Best clothing store in Forbesganj.
-Amazing collection and quality.
-</p>
-<h4>Rajesh Kumar</h4>
-</div>
-
-<div class="review-card">
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p>
-Excellent saree collection and affordable prices.
-</p>
-<h4>Pooja Devi</h4>
-</div>
-
-<div class="review-card">
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p>
-One stop destination for complete family shopping.
-</p>
-<h4>Amit Singh</h4>
-</div>
-
-</div>
-
-</div>
+<a href="https://maps.app.goo.gl/BuJxUM8qvCc4nKFE7"
+target="_blank"
+class="btn">
+📍 Location
+</a>
 
 </section>
 
 <section id="contact" class="contact">
 
-<div class="container">
+<h2 class="section-title">Contact Us</h2>
 
-<h2 class="section-title">
-Visit Our Store
-</h2>
+<p><strong>NEELAM</strong></p>
 
-<div class="contact-box">
+<p>Sadar Road, Near Jyoti, Forbesganj, Araria, Bihar - 854318</p>
 
-<h3>NEELAM Full Family Wear Store</h3>
-
-<p>Near Jyoti Mod</p>
-
-<p>Forbesganj, Araria</p>
-
-<p>Bihar - 854318</p>
-
-<p class="phone">
-📞 +91 91420 47599
-</p>
-
-<div class="contact-buttons">
-
-<a href="https://wa.me/919142047599"
-target="_blank"
-class="btn">
-WhatsApp </a>
-
-<a href="https://maps.app.goo.gl/aVYYmAJCD3nXcuNC6"
-target="_blank"
-class="btn">
-Get Directions </a>
-
-</div>
-
-</div>
-
-</div>
+<p>📞 +91 91420 47599</p>
 
 </section>
 
 <footer>
 
-<h2>NEELAM</h2>
+<h3 style="color:#D4AF37;">NEELAM</h3>
 
-<p>Fashion For Every Generation</p>
+<p>Premium Fashion Store</p>
+
+<br>
 
 <p>
-<footer>© 2026 NEELAM | All Rights Reserved</footer>
+Facebook • WhatsApp • Google Maps
 </p>
+
+<br>
+
+<p>© 2026 NEELAM. All Rights Reserved.</p>
 
 </footer>
 
-<a href="https://wa.me/919142047599"
-target="_blank"
-class="floating-whatsapp"> <i class="fab fa-whatsapp"></i> </a>
-
-<script src="script.js"></script>
+<a class="whatsapp"
+href="https://wa.me/919142047599"
+target="_blank">
+💬
+</a>
 
 </body>
 </html>
